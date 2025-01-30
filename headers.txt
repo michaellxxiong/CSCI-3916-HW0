@@ -1,0 +1,57 @@
+_________________________________________________________________________________________________________________________________________________________________________
+Request Headers
+User-Agent: PostmanRuntime/7.43.0
+Sent by the client. Gives information to the server about the client making the request.
+
+Accept: */* 
+Tells the server which media the client is okay receiving. */* means that any content in the response is accepted.
+
+Postman-Token: 5d6ca940-b293-4e01-8879-4a7c69ae0662
+Specific to Postman. Used to prevent request caching. Used to treat each request as a new one.
+
+Host: www.googleapis.com 
+Specify the hostname of the server the client is making a request to
+
+Accept-Encoding: gzip, deflate, br 
+Tells the server which compression methods the client supports for the response data. gzip, deflate, and br are different types of compression algorithms, 
+
+Connection: keep-alive 
+Controls whether the network connection should be kept open or closed after the current request/response is complete.
+
+_________________________________________________________________________________________________________________________________________________________________________
+Response Headers
+Content-Type: application/json; charset=UTF-8 
+Specifies the media type and character encoding of the response.
+
+Vary: Origin 
+Tells the server which orgin is making the request, Server will vary the request
+
+Vary: X-Origin
+Used for additional cross origin checks
+
+Vary: Referer
+May return different responses which indicates the URL the resquest was referred from.
+
+Content-Encoding: gzip
+Indicates the compression method used for the response data.
+
+Date: Thu, 30 Jan 2025 04:19:58 GMT
+Specifies the date and time when the response was sent by the server.
+
+Server: ESF 
+Provides information about the software that is running on the server. ESF is the name of the software or service most likely 
+
+X-XSS-Protection: 0
+Used to control the cross-site scripting (XSS) filter in browsers. 0 = disabled, 1 = enabled
+
+X-Frame-Options: SAMEORIGIN 
+Controls whether the page can be embedded in an <iframe>. SAMEORIGIN means that the page can only be embedded within an iframe if the requesting page is from the same origin
+
+X-Content-Type-Options: nosniff 
+Tells the browser to not sniff the content type of the response, and to strictly follow the Content-Type header. 
+
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000 
+Used for alternative services to allow the client to connect to a server using different protocols. h3=":443" indicates that the server supports HTTP/3 over port 443. ma=2592000 specifies the maximum age (in seconds) that the client should consider this information valid
+
+Transfer-Encoding: chunked
+Indicates how the body of the response is encoded during transfer. chunked means that the response body is sent in chunks rather than as a single block.
